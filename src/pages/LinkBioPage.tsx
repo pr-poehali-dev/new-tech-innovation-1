@@ -2,38 +2,44 @@ import { motion } from "framer-motion"
 import { ProfileSection } from "@/components/ProfileSection"
 import { LinkCard } from "@/components/LinkCard"
 import { SocialFooter } from "@/components/SocialFooter"
-import { Globe, Youtube, Mail, ShoppingBag, FileText, MessageCircle, Send } from "lucide-react"
+import { BookOpen, Youtube, Mail, Zap, FileText, MessageCircle, Send, Star } from "lucide-react"
 
 const links = [
   {
-    title: "Мой сайт",
-    description: "Портфолио и услуги",
+    title: "🚀 Начать курс прямо сейчас",
+    description: "Запишитесь и начните читать в 3× быстрее",
     href: "#",
-    icon: Globe,
+    icon: Zap,
   },
   {
-    title: "YouTube канал",
-    description: "Видео и туториалы",
+    title: "Программа курса",
+    description: "Методики, упражнения и уровни обучения",
+    href: "#",
+    icon: BookOpen,
+  },
+  {
+    title: "Видео-уроки на YouTube",
+    description: "Бесплатные материалы и примеры занятий",
     href: "#",
     icon: Youtube,
   },
   {
-    title: "Магазин",
-    description: "Товары и услуги",
+    title: "Отзывы учеников",
+    description: "Реальные результаты — скорость и концентрация",
     href: "#",
-    icon: ShoppingBag,
+    icon: Star,
   },
   {
-    title: "Telegram",
-    description: "Написать напрямую",
-    href: "#",
-    icon: Send,
-  },
-  {
-    title: "Бесплатные материалы",
-    description: "Шаблоны и гайды",
+    title: "Бесплатный пробный урок",
+    description: "Попробуйте первое занятие без оплаты",
     href: "#",
     icon: FileText,
+  },
+  {
+    title: "Написать нам",
+    description: "Ответим на вопросы о курсе",
+    href: "#",
+    icon: Send,
   },
 ]
 
@@ -211,9 +217,9 @@ export function LinkBioPage() {
       >
         <motion.div variants={itemVariants} className="pt-2">
           <ProfileSection
-            name="GlassLinks"
-            bio="Креативный дизайнер и разработчик"
-            imageUrl="/images/544291433-18043960274659947-5766591717842883293-n.jpg"
+            name="Скорочтение для малышей"
+            bio="Развивайте навыки чтения у детей с удовольствием 📚 Онлайн-курс по современным методикам"
+            imageUrl="https://cdn.poehali.dev/projects/44c543d3-1076-43df-a873-41e1d1f6f530/files/f04c9987-cc94-4d4b-b372-d4914303cc2d.jpg"
           />
         </motion.div>
 
@@ -226,7 +232,7 @@ export function LinkBioPage() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="pb-2">
-          <SocialFooter socials={socials} copyright="2025 GlassLinks" />
+          <SocialFooter socials={socials} copyright="2026 Скорочтение для малышей" />
         </motion.div>
       </motion.div>
     </main>
